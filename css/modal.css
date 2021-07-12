@@ -1,0 +1,190 @@
+.modal-delete, .modal-update, .modal-create{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s,
+                opacity 0.25s 0s,
+                transform 0.25s;
+}
+
+
+
+
+.modal-content-delete{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFBE3;
+    border-radius: 4px;
+    width: 328px;
+    height: 210px;
+    padding: 19px 25px 23px 20px;
+}
+
+.modal-content-update, .modal-content-create{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFBE3;
+    border-radius: 4px;
+    width: 500px;
+    height: 350px;
+    padding: 19px 25px 24px 20px;
+}
+.show-modal{
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s,
+                opacity 0.25s 0s,
+                transform 0.25s;
+}
+
+.modal-text-delete, .modal-text-update, .modal-text-create{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.deleteBtn{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #AC4141;
+    border-radius: 4px;
+    padding: 9px 112px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.cancelBtn{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #AEAEAE;
+    border-radius: 4px;
+    padding: 9px 113px;
+    width: 287px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.cancelCrossBtn{
+    background-image: url(../img/cross.svg);
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    cursor: pointer;
+}
+.updateCrossBtn, .createCrossBtn{
+    background-image: url(../img/cross.svg);
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px){
+    .modal-delete, .modal-update, .modal-create{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+.modal-content-delete{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFBE3;
+    border-radius: 4px;
+    width: 328px;
+    height: 210px;
+    padding: 19px 25px 23px 20px;
+}
+
+.modal-content-update, .modal-content-create{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFBE3;
+    border-radius: 4px;
+    width: 328px;
+    height: 350px;
+    padding: 19px 25px 24px 20px;
+}
+.show-modal{
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s,
+                opacity 0.25s 0s,
+                transform 0.25s;
+}
+
+.modal-text-delete, .modal-text-update, .modal-text-create{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.deleteBtn{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #AC4141;
+    border-radius: 4px;
+    padding: 9px 112px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.cancelBtn{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #AEAEAE;
+    border-radius: 4px;
+    padding: 9px 113px;
+    width: 287px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.cancelCrossBtn{
+    background-image: url(../img/cross.svg);
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    cursor: pointer;
+}
+.updateCrossBtn, .createCrossBtn{
+    background-image: url(../img/cross.svg);
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    cursor: pointer;
+}
+}

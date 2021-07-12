@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+
+
+    <div class="modal-create">
+        <div class="modal-content-create">
+            <h1 class="modal-text-create">Создать задачу</h1>
+            <button class="createCrossBtn"></button>
+            <input type="text" class="input-title" placeholder="Create title">
+            <textarea type="text" class="input-text" placeholder="Create text"></textarea>
+            <p class='error-text'></p>
+            <button class="create__post">Сохранить</button>
+            <button class="create__post-cancel">Отмена</button>
+        </div>
+    </div>
+
+
+    <div class="modal-delete">
+        <div class="modal-content-delete">
+            <h1 class="modal-text-delete">Вы уверены что хотите удалить задачу навсегда?</h1>
+            <button class="cancelCrossBtn"></button>
+            <button class="deleteBtn">Удалить</button>
+            <button class="cancelBtn">Отмена</button>
+        </div>
+    </div>
+    
+    
+    <div class="modal-update">
+        <div class="modal-content-update">
+            <h1 class="modal-text-update">Изменить задачу</h1>
+            <button class="updateCrossBtn"></button>
+            <input type="text" class="update-title" placeholder="Update title">
+            <textarea type="text" class="update-text" placeholder="Update text"></textarea>
+            <button class="update__post">Сохранить</button>
+            <button class="update__post-cancel">Отмена</button>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <div>
+            <h1 class="main-title">TODOLIST</h1>
+            <h3 class="subtitle">by name surname</h3>
+        </div>
+        <button class="openCreateModal">Создать новую задачу</button>
+    </div>
+    <div class="lists">Список ЗАДАЧ</div>
+
+    <div class="all-post">
+    </div>
+</body>
+<script src="./src/index.js"></script>
+<script src="./src/modal.js"></script>
+</html>
